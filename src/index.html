@@ -1,0 +1,26 @@
+<html lang="en-US">
+<head>
+<title>Currency Exchange API</title>
+</head>
+<body>
+  <div class="container">
+    <div class="bigBox">
+      <h1>Currency Exchange!</h1>
+      <label for="usdTotal">Enter the amount of USD you'd like to convert:</label>
+      <input id="usdTotal" type="text">
+      <form id="foreignCurrency">
+        <label for="currencyChange" class="control-label">Select a foreign currency:</label>
+        <select class="form-control" id="chooseCurrency">
+          <option name="userCurrency" value="CAD">Canadian Dollar</option>
+          <option name="userCurrency" value="GBP">Great Britain Pound Sterling</option>
+          <option name="userCurrency" value="INR">Idian Rupee</option>
+          <option name="userCurrency" value="JMD">Jamaican Dollar</option>
+          <option name="userCurrency" value="MXN">Mexican Peso</option>
+        </select>
+        <button class="btn-success" id="convertCurrency">Get Currency Conversion!</button>
+        <div class="showErrors"></div>
+        <div class="showConversion"></div>
+    </div>
+  </div>
+</body>
+</html>
