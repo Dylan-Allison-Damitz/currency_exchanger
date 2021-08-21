@@ -7,17 +7,22 @@
     <div class="bigBox">
       <h1>Currency Exchange!</h1>
       <label for="usdTotal">Enter the amount of USD you'd like to convert:</label>
-      <input id="usdTotal" type="text">
+      <br>
+      <input id="usdTotal" type="number">
       <form id="foreignCurrency">
+        <br>
         <label for="currencyChange" class="control-label">Select a foreign currency:</label>
         <select class="form-control" id="chooseCurrency">
           <option name="userCurrency" value="CAD">Canadian Dollar</option>
           <option name="userCurrency" value="GBP">Great Britain Pound Sterling</option>
-          <option name="userCurrency" value="INR">Idian Rupee</option>
+          <option name="userCurrency" value="INR">Indian Rupee</option>
           <option name="userCurrency" value="JMD">Jamaican Dollar</option>
           <option name="userCurrency" value="MXN">Mexican Peso</option>
         </select>
+        <br>
         <button class="btn-success" id="convertCurrency">Get Currency Conversion!</button>
+        <br>
+        <br>
         <div class="showErrors"></div>
         <div class="showConversion"></div>
     </div>
